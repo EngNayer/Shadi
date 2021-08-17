@@ -1,0 +1,574 @@
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Regular.ttf');
+    src: url('../fonts/Cairo-Regular.ttf') format('woff'),
+    url('../fonts/Cairo-Regular.ttf') format('truetype')
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo';
+}
+
+.OverLay{
+    right: 0;
+    transform: translateX(100%);
+}
+
+.point{
+    left: 5px;
+}
+
+.formAction button{
+    left: 0;
+}
+
+.posLeftSec{
+    left: 0px;
+    right: auto;
+}
+
+.posRightSec{
+    left: auto;
+    right: 0px;
+}
+
+.imgNote .overUp{
+    left: 12px;
+}
+
+#sync2 .owl-stage{
+    float: right;
+}
+
+
+/* start amany style */
+.menu .menuLinks {
+    margin-right: 30px;
+}
+.form-group>label{
+    right: 15px;
+}
+.form-group input:focus + label, .form-group input:valid + label , .owl-prev {
+    right: 10px;
+}
+
+.slider:before {
+    left: 4px;
+}
+
+.noChat , .listPoint li:before , .overLayBT , .upload-img:before , .loader,
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline:before ,
+.userOrders .tab-pane .orderBlock ul.timeline:before ,
+.addService .dataForm .leftDiv .info li:before{
+    right: 0;
+}
+
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline {
+    margin: 10px 10px 0 0;
+}
+.userOrders .tab-pane .orderBlock ul.timeline {
+    margin: 5px 5px 0 0;
+}
+
+.close_model {
+    left: -10px;
+}
+
+.closeChat {
+    left: 0;
+}
+
+.custom-checkbox {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+.custom-checkbox .custom-control-label::before ,.custom-checkbox .custom-control-label::after{
+    right: -1.5rem;
+    left: 0;
+}
+
+.authForm .forget span, .authForm .createAcc span{
+    margin-right: 7px;
+}
+.register .btnGray{
+    margin-right: 20px;
+}
+
+.menu .menuLinks li {
+    margin-right: 25px;
+}
+.menu .msgs .icon-down_arrow_drop{
+    margin-right: 7px;
+}
+.menu .msgs .num{
+    left: -8px;
+}
+.menu .msgs .num:before {
+    right: 50%;
+}
+div.dataTables_wrapper .dataTables_length input, div.dataTables_wrapper .dataTables_filter input {
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+.orderDetailsContainer .alert-success {
+    padding-right: 20px;
+}
+
+.orderDetailsContainer .alert-dismissible .close {
+    left: 20px;
+    right: auto;
+}
+
+.orderDetailsContainer .detailsCont .rightCont .details .leftInfo{
+    margin-right: 15px;
+}
+.orderDetailsContainer .detailsCont .rightCont{
+    margin-left: 20px;
+}
+.userOrders .tab-pane .orderBlock  ul.timeline > li ,
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li {
+    padding-right: 20px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li:before ,
+.userOrders .tab-pane .orderBlock ul.timeline > li:before {
+    right: -7px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.cancelled .icon-cancel ,
+.userOrders .tab-pane .orderBlock ul.timeline > li.cancelled .icon-cancel {
+    right: -2px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.active:after ,
+.userOrders .tab-pane .orderBlock ul.timeline > li.active:after {
+    right: -5px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime .time{
+    margin-right: 25px;
+}
+.orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .info ,
+.orderDetailsContainer .detailsCont .rightCont .btnDefault.redBtn , .addService .dataForm .rightDiv .btnDefault.grayBtn ,
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag a{
+    margin-right: 20px;
+}
+
+.owl-next{
+    left: 10px;
+}
+
+.btnFullScreen{
+    left: 15px;
+}
+
+.services #owl-demo1 .owl-next {
+    right: -15px;
+    left:auto;
+}
+
+.services #owl-demo1 .owl-prev {
+    left: -15px;
+    right: auto;
+}
+.addService .dataForm .leftDiv:before{
+    border-left: 15px solid #defad2;
+    right: -15px;
+}
+.addService .dataForm .leftDiv .info li{
+    padding-right: 20px;
+}
+
+.authForm .copyright h4{
+    margin-left: 15px;
+}
+.terms .light_green_lamb{
+    left: 0;
+}
+.register .copyright h4 , footer .copyright h4{
+    margin-left: 15px;
+}
+
+header .overlay {
+    transform-origin: left;
+}
+.menu .transferBuyer{
+    margin-left: 30px;
+}
+.menu .profile img{
+    margin-left: 7px;
+}
+.menu .profile ul , .menu .msgs ul {
+    left: 0;
+}
+
+.menu .msgs ul li a span{
+    margin-left: 15px;
+}
+
+.menu .msgs ul li a span.icon-notification:after{
+    left: -2px;
+}
+
+.menu .profile .triangle{
+    left: -15px;
+}
+.orderDetailsContainer .alert-success span.alertIcon {
+    margin-left: 15px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .user img,
+.userOrders .tab-pane .orderBlock .user img{
+    margin-left: 5px;
+}
+.orderDetailsContainer .detailsCont .rightCont .packageCont .options .option{
+    margin-left: 15px;
+}
+.orderDetailsContainer .detailsCont .rightCont .packageCont .options .option span {
+    margin-left: 10px;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .price.oldPrice{
+    margin-left: 7px;
+}
+
+.addService .mainTitles i{
+    margin-left: 20px;
+}
+.addService .dataForm .rightDiv .requiredInfo .form-group .count{
+    text-align: left;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .categories .dropdown.bootstrap-select:first-child {
+    margin-left: 25px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .titleInfo{
+    margin-left: 45px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .titleInfo {
+    margin-left: 0;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag{
+    margin-left: 10px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .hint img{
+    margin-left: 5px;
+}
+
+footer .footerInfo > div .apps img{
+    margin-left: 15px;
+}
+
+.addComment button{
+    float: left;
+}
+
+.inpEdit{
+    text-align: right;
+}
+
+.viewPopInfo .listPoint li:before {
+    right: 0px;
+}
+.editCategory .interests > div {
+    margin-left: 20px;
+}
+.viewPopInfo {
+    left: -50px;
+}
+
+.addService .dataForm.step3 .rightDiv .requiredInfo .addQues img , .addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues img{
+    margin-left: 10px;
+}
+
+.viewPopInfo:before {
+    border-left: 15px solid #defbd2;
+    right: -15px;
+}
+
+
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo.titleImg img{
+    margin-left: 15px;
+}
+
+.seenSp{
+    text-align: left;
+}
+
+.completeAcc.sellOn .bottomInfo span{
+    margin-left: 25px;
+}
+.modal-body form.inviteFriend .btnDefault{
+    margin: 0 25px 0 0 !important;
+}
+header .searchCont .form-control {
+    left: 35px;
+    padding-right: 40px;
+}
+header .searchCont .closeSearch{
+    right: -338px;
+}
+header .headerTop .closeTopHeader{
+    left: 40px;
+}
+header .headerTop span {
+    margin-left: 5px;
+}
+.xHeader{
+    left: 15px;
+}
+
+.linkAfter li a{
+    border-right: 1px solid #CCC;
+}
+
+.searchBox button{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.searchBox input{
+    border-radius: 0px 10px 10px 0px;
+}
+
+#owlProduct .owl-next{
+    left: 0px;
+}
+
+#owlProduct .owl-prev{
+    right: 0px;
+}
+
+.infoWo {
+    padding-left: 100px;
+}
+.socialContainer .contacts li a img{
+    margin-left: 25px;
+}
+.userOrders .nav-pills .nav-item .nav-link span{
+    margin-left: 20px;
+}
+
+.slideInfoSite .owl-dots {
+    right: 25px;
+}
+
+.owlProduct2 .owl-next {
+    left: auto;
+    right: 65px;
+}
+
+.conPo{
+    left: 0px;
+}
+
+.I{
+    left: 10px;
+}
+
+.pointAct{
+    left: 5px;
+}
+
+.wrapFix{
+    left: 20px;
+}
+
+.dropFil{
+    right: 5px;
+}
+
+.thier:before {
+    border-left: 10px solid #5cc431;
+    right: -10px;
+}
+
+.dirLtr{
+    direction: rtl;
+}
+
+.bronz{
+    right: 0px;
+}
+
+.lisOr li:before {
+    right: 6px;
+}
+
+.icFl{
+    right: 0;
+}
+.profileCont .topHead a i {
+    margin-right: 5px;
+}
+
+.profileCont .tabsWhite .parentTab.custom-control {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+.profileCont .tabsWhite .parentTab .custom-control-label::before {
+    left: auto;
+    right: -1.5rem;
+}
+
+.profileCont .tabsWhite .parentTab .custom-control-label::after {
+    left: auto;
+    right: -1.5rem;
+}
+
+.profileCont .tabsWhite .radioTabs .tabTitle {
+    padding-right: 15px;
+}
+
+.addService .dataForm .leftDiv{
+    margin: 20px 25px 0 0;
+}
+
+.blockSent .infoSender p{
+    border-radius: 50px 40px 0px 50px;
+}
+
+.blockRecent .infoRecent p{
+    border-radius: 40px 50px 50px 0px;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.contentViewSearch {
+    right: 10%;
+}
+
+@media(max-width: 767px){
+    .register .btnGray {
+        margin-right: 0;
+    }
+
+    header .headerTop .closeTopHeader {
+        left: 10px;
+    }
+
+    header .menuBar .toggle {
+        text-align: right;
+    }
+    .menu {
+         text-align: right;
+         right: -100%;
+         transform-origin: right;
+     }
+
+    .menu.ulDir , .menu .profile ul, .menu .msgs ul {
+        right: 0
+    }
+
+    .orderDetailsContainer .detailsCont .rightCont .details .leftInfo {
+        margin-right: 0;
+    }
+
+    header .user img {
+        margin-left: 20px;
+    }
+
+    header .user  i{
+        margin-left: 20px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont {
+        margin-left: 0;
+    }
+
+    .addService .dataForm .rightDiv .requiredInfo .titleInfo {
+        margin-left: 0;
+    }
+    .addService .dataForm .rightDiv .requiredInfo .categories .dropdown.bootstrap-select:first-child {
+        margin-left: 10px;
+    }
+    .editCategory .interests > div {
+        margin-left:0;
+    }
+
+
+    .modal-body form.inviteFriend .btnDefault {
+        margin: 0 !important;
+    }
+
+    header .searchCont .closeSearch {
+        right: auto;
+    }
+
+    header .searchCont .form-control {
+        left: auto;
+        padding: 0 5px;
+    }
+    .topCategories .catLinks li {
+        margin-left: 30px;
+    }
+
+    .userOrders .nav-pills .nav-item .nav-link span {
+        margin-left: 10px;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .menu .menuLinks {
+        margin-right: 0px;
+    }
+    .menu .menuLinks li {
+        margin-right: 15px;
+    }
+    .menu .transferBuyer {
+        margin-left: 15px;
+    }
+    header .searchCont .closeSearch {
+        right: -140px;
+    }
+    header .searchCont .form-control {
+        padding-right: 30px;
+    }
+    .topCategories .catLinks li {
+        margin-left: 30px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+    header .searchCont .closeSearch {
+        right: -240px;
+    }
+    header .searchCont .form-control {
+        padding-right: 35px;
+    }
+    .topCategories .catLinks li {
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 1024px){
+    .chatAll .menuChat{
+        right: 0;
+    }
+    .infoWo {
+        padding-left: 0px;
+    }
+}
+
+/* end amany style */
+
+/* Media Screen */
+
+@media screen and (max-width: 990px){
+
+
+    .fixHeader{
+        right: 0;
+        transform: translateX(100%);
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+
+}

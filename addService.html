@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="ar">
+<head>
+
+    <!-- Title Page -->
+    <title>shadi</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="img/fav.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <meta name="theme-color" content="#121320">
+    <meta name="msapplication-navbutton-color" content="#121320">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link href="css/icomoon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/ar.css">
+
+</head>
+<body class="pT115">
+
+<!-- Start Loading Page -->
+
+<div class="loader">
+    <div class="loading"></div>
+</div>
+
+<!-- Start Overlay Page -->
+
+<div class="OverLay"></div>
+
+
+<!--  Start Header  -->
+
+<header>
+    <div class="container">
+
+        <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
+            <a href="providerHome.html">
+                <img src="img/logo_icon.png" class="logo" alt="logo">
+            </a>
+            <div class="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+
+            <!--             if user login-->
+            <a href="profile.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    أماني قاسم
+                </p>
+            </a>
+
+
+            <!--            if user not login-->
+            <!--            <a href="login.html" class="user d-md-none">-->
+            <!--                <i class="far fa-user"></i>-->
+            <!--                <p>-->
+            <!--                    حسابي-->
+            <!--                </p>-->
+            <!--            </a>-->
+
+
+            <div class="d-flex align-items-center">
+                <a href="providerHome.html" class="d-none d-md-block">
+                    <img src="img/logo_icon.png" class="logo" alt="logo">
+                </a>
+
+                <ul class="menuLinks">
+                    <li>
+                        <a href="providerHome.html">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="providerOrders.html">الطلبات</a>
+                    </li>
+                    <li>
+                        <div class="msgs">
+                            <div class="num">
+                                100
+                            </div>
+                            الرسائل
+                            <span class="icon-down_arrow_drop"></span>
+                            <ul class="boxShadow">
+                                <li><a href="chat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
+                                <li><a href="notifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="services.html">الخدمات المقدمة</a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">تحليلات</a>
+                    </li>
+                    <li>
+                        <a href="earnings.html">ارباح</a>
+                    </li>
+
+                    <!--                    only in mobile-->
+
+                    <li class="d-sm-none">
+                        <div>
+                            <span>الحالة</span>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="aval2">
+                                <label class="custom-control-label" for="aval2"></label>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="d-sm-none"><a href="settings.html">الاعدادات</a></li>
+                    <li class="d-sm-none">
+                        <div>
+                            <span>اللغة</span>
+                            <div class="lang">
+                                <a class="active py-0 px-3">Ar</a>
+                                |
+                                <a class="py-0 pr-3 pl-0">En</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-sm-none"><a href="login.html">تسجيل الخروج</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center">
+
+                <a href="userHome.html" class="transferBuyer">
+                    حول الي مشتري
+                </a>
+
+                <!-- if user login-->
+                <!--                <a href="profile.html" class="profile d-none d-md-flex">-->
+                <!--                    <img src="img/pic.jpg" class="img-fluid" alt="profile">-->
+                <!--                    أماني قاسم-->
+                <!--                </a>-->
+
+                <div class="profile d-none d-md-flex">
+                    <img class="img-fluid" src="img/pic.jpg" alt="profile">
+                    <span class="icon-down_arrow_drop"></span>
+                    <img src="img/triangle.png" alt="arrow" class="triangle">
+                    <ul class="boxShadow">
+                        <li><a href="profile.html">عرض الملف الشخصي</a></li>
+                        <li>
+                            <div>
+                                <span>الحالة</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="aval">
+                                    <label class="custom-control-label" for="aval"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="settings.html">الاعدادات</a></li>
+                        <li>
+                            <div>
+                                <span>اللغة</span>
+                                <div class="lang">
+                                    <a class="active py-0 pl-3 pr-0">Ar</a>
+                                    |
+                                    <a class="py-0 pr-3 pl-0">En</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="login.html">تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!--end header-->
+
+<!--start addService-->
+<div class="bgLightGray addService">
+    <div class="container">
+
+        <div class="mainTitles">
+
+            <a class="active" href="addService.html">
+                <span class="icon-information_provider_service icons"></span>
+                <h5>نظرة عامة</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
+
+            <a href="pricePlans.html">
+                <span class="icon-price_tag icons"></span>
+                <h5>خطط الاسعار</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
+
+            <a>
+                <span class="icon-computer_provider icons"></span>
+                <h5>الوصف والشروط</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
+
+            <a>
+                <span class="icon-document_provider icons"></span>
+                <h5>متطلبات التقديم</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
+
+            <a>
+                <span class="icon-image_provider icons"></span>
+                <h5>الصور</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
+
+            <a>
+                <span class="icon-cloud_provider icons"></span>
+                <h5>نشر</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="addService">
+    <div class="container">
+        <div class="dataForm">
+
+            <div class="opacityDiv">
+                <img src="img/provider_vector_service.png" class="savedImg" alt="vector">
+                <div class="success">
+                    <span class="icon-check_rules"></span>
+                    تم التعديل بنجاح
+                </div>
+            </div>
+
+
+            <form class="rightDiv">
+
+                <div class="requiredInfo">
+                    <div class="titleInfo">
+                        <h4>عنوان الخدمة</h4>
+                        <h5>يجب عليك كتابة عنوان يوصف خدمتك</h5>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control textareaCount" placeholder="تفاصيل العنوان" maxlength="80" ></textarea>
+                        <div class="count">
+                            <span class="current">0</span>
+                            <span class="maximum">/ 80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="requiredInfo">
+                    <div class="titleInfo">
+                        <h4>الاقسام</h4>
+                        <h5>يجب اختيار القسم لنسهيل البحث عن خدمتك</h5>
+                    </div>
+
+                    <div class="categories">
+                        <select class="selectpicker" id="catName" title="اسم القسم">
+                            <option>جرافيك وديزاين</option>
+                            <option>تصوير</option>
+                        </select>
+                        <select class="selectpicker" id="branchCat" title="القسم الفرعي">
+                            <option>جرافيك وديزاين</option>
+                            <option>تصوير</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="requiredInfo">
+                    <div class="titleInfo">
+                        <h4>تصنيفات البحث</h4>
+                        <h5>يجب اختيار تصنيف لتظهر الخدمة في علامات البحث</h5>
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <input class="form-control" type="text" id="tagsInput">
+
+                        <div class="hint"><img src="img/mark_info_provider.png" alt="info"> <span>من فضلك</span> بعض الخدمات تتطلب التأكد من الاقسام</div>
+
+                        <hr class="customHr">
+                    </div>
+                </div>
+
+                <div class="btnCont">
+                    <a class="btnDefault hvr-pulse saveForm">حفظ واستمرار</a>
+                    <a href="services.html" class="btnDefault grayBtn hvr-pulse">الغاء</a>
+                </div>
+
+
+            </form>
+
+            <div class="leftDiv">
+                <img src="img/idea_provider.png" class="idea" alt="idea">
+                <iframe src="https://player.vimeo.com/video/60814695?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <ul class="info">
+                    <li>تعليمات لرفع اول خدمة</li>
+                    <li>تعليمات لرفع اول خدمة</li>
+                    <li>تعليمات لرفع اول خدمة</li>
+                    <li>تعليمات لرفع اول خدمة</li>
+                    <li>تعليمات لرفع اول خدمة</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bgLightGray p-2"></div>
+<!--end addService-->
+
+<!--start footer-->
+<footer>
+    <div class="container">
+        <img src="img/light_green_lamb.svg" class="lightLamp" alt="ight_green_lamb">
+        <div class="footerInfo">
+
+            <div>
+                <h5 class="title">فئات</h5>
+                <ul>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الجرافيم والديزاين</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التكنولوجيا والتسويق الالكتروني</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التصوير والمونتاج</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الكتابة والترجمة</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الفيديو والانيميشن</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التعليم</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الاستشارات</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">لايف ستايل</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">خدمات عامة</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">عن</h5>
+                <ul>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">سياسة الخصوصية</a>
+                    </li>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">شروط الخدمة</a>
+                    </li>
+                </ul>
+                <h5 class="title">تحميل تطبيق الموبايل</h5>
+                <div class="apps">
+                    <a href="" class="hvr-float-shadow"><img src="img/google-play.png" alt="google play"></a>
+                    <a href="" class="hvr-float-shadow"><img src="img/appstore.png" alt="app store"></a>
+                </div>
+
+            </div>
+
+            <div>
+                <h5 class="title">دعم</h5>
+                <ul>
+                    <li>
+                        <a href="support.html" class="hvr-backward">المساعدة والدعم</a>
+                    </li>
+                    <li>
+                        <a href="sellOnLight.html" class="hvr-backward">بيع علي <span>Light Up</span></a>
+                    </li>
+                    <li>
+                        <a href="completeAcc.html" class="hvr-backward">الشراء علي <span>Light Up</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">المجتمع</h5>
+                <ul>
+                    <li>
+                        <a data-toggle="modal" data-target="#inviteFriend" class="hvr-backward">دعوة صديق</a>
+                    </li>
+                    <li>
+                        <a href="beSeller.html" class="hvr-backward">أصبح بائع</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr class="customHr">
+        <div class="info">
+            <div class="copyright justify-content-center justify-content-sm-start">
+                <h4>Light Up</h4>
+                <p>جميع الحقوق محفوظة ل <a href="">اوامر الشبكة 2021</a></p>
+            </div>
+            <div class="social">
+                <a href="" class="hvr-float-shadow"><span class="icon-linkedin"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-facebook"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="inviteFriend" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a data-dismiss="modal" class="closeModal" type="submit">
+                    <span class="icon-cancel_black"></span>
+                </a>
+                <div class="modal-body">
+                    <img class="vector" src="img/vector_invite.png" alt="vector invite friend">
+                    <p class="title">دعوة الاصدقاء وكلاكما تحصلان علي ما يصل الي 100 دولار</p>
+                    <p class="desc maxWidthAuto">تعريف اصدقائك علي اسهل طريقة لإنجاز الامور</p>
+
+                    <form action="" class="inviteFriend">
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="اضف البريد الالكتروني">
+                        </div>
+                        <a data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</a>
+                    </form>
+                    <p class="title my-4">رابط الدعوه الخاص بك</p>
+                    <a href="" class="bgLightGray py-3 px-md-5 px-2 borderCli Radius5 colorBlack w-75 wordBreak text-center">
+                        https://marvelapp.com/prototype/25ee2bc6/screen/73731393
+                    </a>
+
+                    <p class="title mt-4 mb-2">شارك عبر وسائل التواصل</p>
+
+                    <div class="social">
+                        <a class="twitter hvr-float-shadow">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="faceBook hvr-float-shadow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="linkedIn hvr-float-shadow">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--end footer-->
+
+
+<!--===============================
+    SCRIPT
+===================================-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+
+<!--start select-->
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+<!--end select-->
+
+<!--start show loader to navigate-->
+<script>
+    $(".saveForm").click(function() {
+        $('.opacityDiv').fadeIn().css('display','flex')
+        var delay = 2000;
+        var url = 'pricePlans.html'
+        setTimeout(function(){ window.location = url; }, delay);
+    });
+
+</script>
+<!--end show loader to navigate-->
+
+<!--start tags-->
+
+<script>
+    (function(){
+
+        "use strict"
+
+
+        // Plugin Constructor
+        var TagsInput = function(opts){
+            this.options = Object.assign(TagsInput.defaults , opts);
+            this.init();
+        }
+
+        // Initialize the plugin
+        TagsInput.prototype.init = function(opts){
+            this.options = opts ? Object.assign(this.options, opts) : this.options;
+
+            if(this.initialized)
+                this.destroy();
+
+            if(!(this.orignal_input = document.getElementById(this.options.selector)) ){
+                console.error("tags-input couldn't find an element with the specified ID");
+                return this;
+            }
+
+            this.arr = [];
+            this.wrapper = document.createElement('div');
+            this.input = document.createElement('input');
+            init(this);
+            initEvents(this);
+
+            this.initialized =  true;
+            return this;
+        }
+
+        // Add Tags
+        TagsInput.prototype.addTag = function(string){
+
+            if(this.anyErrors(string))
+                return ;
+
+            this.arr.push(string);
+            var tagInput = this;
+
+            var tag = document.createElement('span');
+            tag.className = this.options.tagClass;
+            tag.innerText = string;
+
+            var closeIcon = document.createElement('a');
+            closeIcon.innerHTML = '&times;';
+
+            // delete the tag when icon is clicked
+            closeIcon.addEventListener('click' , function(e){
+                e.preventDefault();
+                var tag = this.parentNode;
+
+                for(var i =0 ;i < tagInput.wrapper.childNodes.length ; i++){
+                    if(tagInput.wrapper.childNodes[i] == tag)
+                        tagInput.deleteTag(tag , i);
+                }
+            })
+
+
+            tag.appendChild(closeIcon);
+            this.wrapper.insertBefore(tag , this.input);
+            this.orignal_input.value = this.arr.join(',');
+
+            return this;
+        }
+
+        // Delete Tags
+        TagsInput.prototype.deleteTag = function(tag , i){
+            tag.remove();
+            this.arr.splice( i , 1);
+            this.orignal_input.value =  this.arr.join(',');
+            return this;
+        }
+
+        // Make sure input string have no error with the plugin
+        TagsInput.prototype.anyErrors = function(string){
+            if( this.options.max != null && this.arr.length >= this.options.max ){
+                console.log('max tags limit reached');
+                return true;
+            }
+
+            if(!this.options.duplicate && this.arr.indexOf(string) != -1 ){
+                console.log('duplicate found " '+string+' " ')
+                return true;
+            }
+
+            return false;
+        }
+
+        // Add tags programmatically
+        TagsInput.prototype.addData = function(array){
+            var plugin = this;
+
+            array.forEach(function(string){
+                plugin.addTag(string);
+            })
+            return this;
+        }
+
+        // Get the Input String
+        TagsInput.prototype.getInputString = function(){
+            return this.arr.join(',');
+        }
+
+
+        // destroy the plugin
+        TagsInput.prototype.destroy = function(){
+            this.orignal_input.removeAttribute('hidden');
+
+            delete this.orignal_input;
+            var self = this;
+
+            Object.keys(this).forEach(function(key){
+                if(self[key] instanceof HTMLElement)
+                    self[key].remove();
+
+                if(key != 'options')
+                    delete self[key];
+            });
+
+            this.initialized = false;
+        }
+
+        // Private function to initialize the tag input plugin
+        function init(tags){
+            tags.wrapper.append(tags.input);
+            tags.wrapper.classList.add(tags.options.wrapperClass);
+            tags.orignal_input.setAttribute('hidden' , 'true');
+            tags.orignal_input.parentNode.insertBefore(tags.wrapper , tags.orignal_input);
+        }
+
+        // initialize the Events
+        function initEvents(tags){
+            tags.wrapper.addEventListener('click' ,function(){
+                tags.input.focus();
+            });
+
+
+            tags.input.addEventListener('keydown' , function(e){
+                var str = tags.input.value.trim();
+
+                if( !!(~[9 , 13 , 188].indexOf( e.keyCode ))  )
+                {
+                    e.preventDefault();
+                    tags.input.value = "";
+                    if(str != "")
+                        tags.addTag(str);
+                }
+
+            });
+        }
+
+
+        // Set All the Default Values
+        TagsInput.defaults = {
+            selector : '',
+            wrapperClass : 'tags-input-wrapper',
+            tagClass : 'tag',
+            max : null,
+            duplicate: false
+        }
+
+        window.TagsInput = TagsInput;
+
+    })();
+
+    var tagInput1 = new TagsInput({
+        selector: 'tagsInput',
+        duplicate : false,
+        // max : 10
+    });
+    tagInput1.addData(['PHP' , 'JavaScript' , 'CSS'])
+
+</script>
+<!--end tags-->
+
+</body>
+</html>

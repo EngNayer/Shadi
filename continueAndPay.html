@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="ar">
+<head>
+
+    <!-- Title Page -->
+    <title>shadi</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="img/fav.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <meta name="theme-color" content="#121320">
+    <meta name="msapplication-navbutton-color" content="#121320">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link href="css/icomoon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/ar.css">
+
+</head>
+<body class="pT115">
+
+<!-- Start Loading Page -->
+
+<div class="loader">
+    <div class="loading"></div>
+</div>
+
+<!-- Start Overlay Page -->
+
+<div class="OverLay"></div>
+
+
+<!--  Start Header  -->
+
+<header>
+    <div class="container">
+
+        <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
+            <a href="providerHome.html">
+                <img src="img/logo_icon.png" class="logo" alt="logo">
+            </a>
+            <div class="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+
+            <!--             if user login-->
+            <a href="profile.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    أماني قاسم
+                </p>
+            </a>
+
+
+            <!--            if user not login-->
+            <!--            <a href="login.html" class="user d-md-none">-->
+            <!--                <i class="far fa-user"></i>-->
+            <!--                <p>-->
+            <!--                    حسابي-->
+            <!--                </p>-->
+            <!--            </a>-->
+
+
+            <div class="d-flex align-items-center">
+                <a href="providerHome.html" class="d-none d-md-block">
+                    <img src="img/logo_icon.png" class="logo" alt="logo">
+                </a>
+
+                <ul class="menuLinks">
+                    <li>
+                        <a href="providerHome.html">الرئيسية</a>
+                    </li>
+                    <li class="active">
+                        <a href="providerOrders.html">الطلبات</a>
+                    </li>
+                    <li>
+                        <div class="msgs">
+                            <div class="num">
+                                100
+                            </div>
+                            الرسائل
+                            <span class="icon-down_arrow_drop"></span>
+                            <ul class="boxShadow">
+                                <li><a href="chat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
+                                <li><a href="notifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="services.html">الخدمات المقدمة</a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">تحليلات</a>
+                    </li>
+                    <li>
+                        <a href="earnings.html">ارباح</a>
+                    </li>
+
+                    <!--                    only in mobile-->
+
+                    <li class="d-sm-none">
+                        <div>
+                            <span>الحالة</span>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="aval2">
+                                <label class="custom-control-label" for="aval2"></label>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="d-sm-none"><a href="settings.html">الاعدادات</a></li>
+                    <li class="d-sm-none">
+                        <div>
+                            <span>اللغة</span>
+                            <div class="lang">
+                                <a class="active py-0 px-3">Ar</a>
+                                |
+                                <a class="py-0 pr-3 pl-0">En</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-sm-none"><a href="login.html">تسجيل الخروج</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center">
+
+                <a href="userHome.html" class="transferBuyer">
+                    حول الي مشتري
+                </a>
+
+                <!-- if user login-->
+                <!--                <a href="profile.html" class="profile d-none d-md-flex">-->
+                <!--                    <img src="img/pic.jpg" class="img-fluid" alt="profile">-->
+                <!--                    أماني قاسم-->
+                <!--                </a>-->
+
+                <div class="profile d-none d-md-flex">
+                    <img class="img-fluid" src="img/pic.jpg" alt="profile">
+                    <span class="icon-down_arrow_drop"></span>
+                    <img src="img/triangle.png" alt="arrow" class="triangle">
+                    <ul class="boxShadow">
+                        <li><a href="profile.html">عرض الملف الشخصي</a></li>
+                        <li>
+                            <div>
+                                <span>الحالة</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="aval">
+                                    <label class="custom-control-label" for="aval"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="settings.html">الاعدادات</a></li>
+                        <li>
+                            <div>
+                                <span>اللغة</span>
+                                <div class="lang">
+                                    <a class="active py-0 pl-3 pr-0">Ar</a>
+                                    |
+                                    <a class="py-0 pr-3 pl-0">En</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="login.html">تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!--end header-->
+
+
+<div class="bgLightGray addService borderBCli">
+    <div class="container">
+
+        <div class="flex flexSpace">
+
+            <div class="mainTitles">
+
+                <a class="active" href="userOrderDetails.html">
+                    <span class="icon-check_rules icons"></span>
+                    <h5 class="colorDefault font-weight-bold">المتطلبات المرسله</h5>
+                </a>
+
+                <a class="active" href="PostingRequirements.html">
+                    <span class="icon-location icons bgYellow"></span>
+                    <h5 class="colorYellow font-weight-bold">الطلب معلق حتي يتم الموافقه عليه</h5>
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--start orderDetailsContainer-->
+<div class="orderDetailsContainer">
+    <div class="container">
+
+        <div class="detailsCont">
+            <div class="rightCont">
+
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <span class="icon-hourglass alertIcon"></span>
+                    في انتظار الموافقة علي الطلب
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span class="icon-cancel_black"></span>
+                    </button>
+                </div>
+
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <span class="icon-victory_black alertIcon"></span>
+                    طلبك بدء !
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span class="icon-cancel_black"></span>
+                    </button>
+                </div>
+
+                <div class="details bgFa borderCli clickShowInPro">
+                    <img src="img/order.png" class="orderImg img-fluid" alt="order image">
+                    <div class="leftInfo">
+                        <div class="idInfo">
+                            <span class="id">#123435345</span>
+                            <div class="quantity">
+                                <span>120 ريال</span>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="img/user.png" alt="user">
+                            Awamer Alshabaka
+                        </div>
+                        <div class="processTime">
+                            <div class="date">
+                                <ul class="timeline">
+                                    <li class="active">4 يناير 2021</li>
+                                    <li>
+                                        5 يناير 2021</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faDiv">
+                    <div id="clockdiv">
+                        <div class="count">
+                            <span class="days"></span>
+                            <div class="smalltext">يوم</div>
+                        </div>
+                        <span class="colMark">|</span>
+                        <div class="count">
+                            <span class="hours"></span>
+                            <div class="smalltext">ساعة</div>
+                        </div>
+                        <span class="colMark">|</span>
+                        <div class="count">
+                            <span class="minutes"></span>
+                            <div class="smalltext">دقيقة</div>
+                        </div>
+                        <span class="colMark">|</span>
+                        <div class="count">
+                            <span class="seconds"></span>
+                            <div class="smalltext">ثانية</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bgFa p-3 mt-3 mb-3 borderCli">
+                    <div class="flex flexSpace">
+
+                        <div class="">
+                            <h5 class="colorGreen font-weight-bold">متطلبات الطلب</h5>
+                            <p>لقد استوفيت المتطلبات</p>
+                        </div>
+
+                        <a href="" class="colorDefault font-weight-bold">شاهد الطلبات</a>
+
+                    </div>
+                </div>
+
+                <div class="faDiv">
+                    <div class="flex flexRow">
+                        <div class="flex flexRowCenter">
+                            <h6 class="m-0 font-weight-bold colorGreen">بدء الطلب :</h6>
+                            <p class="lineHText0 m-0 font-weight-bold mr-2 ml-2">موعد التسليم 34 يناير 2022</p>
+                        </div>
+                        <hr class="flex1">
+                    </div>
+
+                    <div class="flex flexRowCenter flexEnd">
+                        <span class="colorDefault">onLine</span>
+                        <i class="fas fa-circle colorDefault mr-1 ml-1 font10"></i>
+                        <p>Sh3wZa</p>
+                    </div>
+
+                    <form action="" class="w-100 innerFormThink mt-0">
+                        <div class="w-100 pt-3 pb-3 position-relative">
+                            <div class="form-group">
+                                <textarea class="form-control textareaCount m-0 font13 font-weight-bold p-3" placeholder="ارسل رساله الي المقدم" style="height: 260px;background-color: #fafafa !important;border: 1px solid #f3f3f3 !important;" maxlength="2500" ></textarea>
+                                <div class="count conPo bgF1 p-3 flex flexSpace">
+                                    <div class="">
+                                        <span class="current">0</span>
+                                        <span class="maximum">/ 2500</span>
+                                    </div>
+                                    <div class="wrap width_full">
+                                        <label class="uploadImg flex flexRowCenter m-0 custom-file-upload">
+                                            <input type="file" name="file" id="file" class="file_upload">
+                                            <p class="colorDefault d-none">إرفاق ملف</p>
+                                            <span class="icon-paperclip colorDefault" style="font-size: 15px"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="flex flexCenter mt-2 mb-2">
+                        <a href="chat.html" class="colorDefault font-weight-bold">شاهد المحادثه</a>
+                        <p class="lineHText0 font-weight-bold m-0 mr-1 ml-1">في صندوق البريد الخاص بك</p>
+                    </div>
+                </div>
+
+                <div class="btnCont">
+                    <a href="userHome.html" class="btnDefault hvr-pulse">عوده للرئيسيه</a>
+                    <a href="providerOrders.html" class="btnDefault redBtn hvr-pulse" data-toggle="modal" data-target="#revOrder">إلغاء الطلب</a>
+                </div>
+
+            </div>
+
+            <div class="leftCont">
+
+                <div class="bgGray borderCli p-2 mb-3">
+                    <ul class="lisOr">
+                        <li class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                            <div class="icFl">
+                                <i class="fas fa-check-circle colorDefault"></i>
+                            </div>
+                            <strong class="colorBla">طلبات المتقدم</strong>
+                        </li>
+                        <li class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                            <div class="icFl">
+                                <i class="fas fa-circle colorDefault"></i>
+                            </div>
+                            <strong class="colorBla">طلب مفلق</strong>
+                        </li>
+                        <li class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                            <div class="icFl">
+                                <i class="fas fa-circle colorGray"></i>
+                            </div>
+                            <p class="colorDefault lineHText0 m-0">الطلب قيد التنفيذ</p>
+                            <p class="colorBla lineHText0 m-0">نعمل الان علي توصيل الطلب في يوم 4/4/2020</p>
+                        </li>
+                        <li class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                            <div class="icFl">
+                                <i class="fas fa-circle colorWight"></i>
+                            </div>
+                            <strong class="colorBla">طلبات المتقدم</strong>
+                        </li>
+                    </ul>
+
+                    <div class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                        <div class="icFl">
+                            <i class="fas fa-info-circle colorDefault"></i>
+                        </div>
+                        <p class="colorBla lineHText0 m-0">هل هناك شئ غير واضح ؟</p>
+                        <p class="lineHText0 m-0 colorDefault">شاهد الاسئله الشائعه</p>
+                    </div>
+
+                </div>
+
+                <div class="bgDefaultOp borderCliG p-3">
+                    <i class="fas fa-info-circle colorDefault" style="font-size: 23px;vertical-align: text-top;"></i>
+                    <span class="font-weight-bold text-center colorBla" style="font-size: 15px;line-height: 30px;">اذا كان لديك اي مشكله مع الطلب يمكنك زياره مركز العملاء</span>
+                    <span class="colorDefault font-weight-bold" data-toggle="modal" data-target="#contact" style="font-size: 15px;line-height: 30px;">خدمه العملاء</span>
+                </div>
+
+                <a href="chat.html" class="btnDefault p-2 mt-3 mb-3 w-100 displayInline Radius10 text-center">محادثه مع البائع</a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end orderDetailsContainer-->
+
+<!-- Modal -->
+<div class="modal fade" id="revOrder" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <a data-dismiss="modal" class="closeModal" type="submit">
+                <span class="icon-cancel_black"></span>
+            </a>
+            <div class="modal-body pt-0">
+                <div class="text-center">
+
+                    <img src="img/undraw_stranded_traveler_pdbw.png" style="max-width: 200px">
+
+                    <p class="font-weight-bold colorGray">يجب عليك اعطاء سبب لالغاء الرفض</p>
+
+                </div>
+
+                <form action="">
+
+                    <textarea placeholder="سبب الالغاء" class="bgFa" style="height: 200px"></textarea>
+
+                    <button data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <a data-dismiss="modal" class="closeModal" type="submit">
+                <span class="icon-cancel_black"></span>
+            </a>
+            <div class="modal-body pt-0">
+                <div class="text-center">
+
+                    <img src="img/undraw_Chat_bot_re_e2gj.png" style="max-width: 200px">
+
+                    <p class="font-weight-bold colorGray">يمكنك التواصل مباشر مع فريق الدعم عن طريق الاتصال المباشر بهذا الرقم</p>
+
+                    <a href="" class="bgDefaultOp pt-2 pb-2 pr-5 pl-5 mt-3 mb-3 displayInline">
+                        <i class="fab fa-whatsapp colorDefault" style="font-size: 22px;vertical-align: top;margin: 0px 7px;"></i>
+                        <strong class="colorBla">345259898435</strong>
+                    </a>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--start footer-->
+<footer>
+    <div class="container">
+        <img src="img/light_green_lamb.svg" class="lightLamp" alt="ight_green_lamb">
+        <div class="footerInfo">
+
+            <div>
+                <h5 class="title">فئات</h5>
+                <ul>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الجرافيم والديزاين</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التكنولوجيا والتسويق الالكتروني</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التصوير والمونتاج</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الكتابة والترجمة</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الفيديو والانيميشن</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التعليم</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الاستشارات</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">لايف ستايل</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">خدمات عامة</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">عن</h5>
+                <ul>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">سياسة الخصوصية</a>
+                    </li>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">شروط الخدمة</a>
+                    </li>
+                </ul>
+                <h5 class="title">تحميل تطبيق الموبايل</h5>
+                <div class="apps">
+                    <a href="" class="hvr-float-shadow"><img src="img/google-play.png" alt="google play"></a>
+                    <a href="" class="hvr-float-shadow"><img src="img/appstore.png" alt="app store"></a>
+                </div>
+
+            </div>
+
+            <div>
+                <h5 class="title">دعم</h5>
+                <ul>
+                    <li>
+                        <a href="support.html" class="hvr-backward">المساعدة والدعم</a>
+                    </li>
+                    <li>
+                        <a href="sellOnLight.html" class="hvr-backward">بيع علي <span>Light Up</span></a>
+                    </li>
+                    <li>
+                        <a href="completeAcc.html" class="hvr-backward">الشراء علي <span>Light Up</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">المجتمع</h5>
+                <ul>
+                    <li>
+                        <a data-toggle="modal" data-target="#inviteFriend" class="hvr-backward">دعوة صديق</a>
+                    </li>
+                    <li>
+                        <a href="beSeller.html" class="hvr-backward">أصبح بائع</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr class="customHr">
+        <div class="info">
+            <div class="copyright justify-content-center justify-content-sm-start">
+                <h4>Light Up</h4>
+                <p>جميع الحقوق محفوظة ل <a href="">اوامر الشبكة 2021</a></p>
+            </div>
+            <div class="social">
+                <a href="" class="hvr-float-shadow"><span class="icon-linkedin"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-facebook"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="inviteFriend" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a data-dismiss="modal" class="closeModal" type="submit">
+                    <span class="icon-cancel_black"></span>
+                </a>
+                <div class="modal-body">
+                    <img class="vector" src="img/vector_invite.png" alt="vector invite friend">
+                    <p class="title">دعوة الاصدقاء وكلاكما تحصلان علي ما يصل الي 100 دولار</p>
+                    <p class="desc maxWidthAuto">تعريف اصدقائك علي اسهل طريقة لإنجاز الامور</p>
+
+                    <form action="" class="inviteFriend">
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="اضف البريد الالكتروني">
+                        </div>
+                        <a data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</a>
+                    </form>
+                    <p class="title my-4">رابط الدعوه الخاص بك</p>
+                    <a href="" class="bgLightGray py-3 px-md-5 px-2 borderCli Radius5 colorBlack w-75 wordBreak text-center">
+                        https://marvelapp.com/prototype/25ee2bc6/screen/73731393
+                    </a>
+
+                    <p class="title mt-4 mb-2">شارك عبر وسائل التواصل</p>
+
+                    <div class="social">
+                        <a class="twitter hvr-float-shadow">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="faceBook hvr-float-shadow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="linkedIn hvr-float-shadow">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--end footer-->
+
+<!--===============================
+    SCRIPT
+===================================-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+<!--count down-->
+<script>
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+    initializeClock('clockdiv', deadline);
+</script>
+
+<script>
+    $('.faDiv').slideUp();
+    $(document).on("click", ".clickShowInPro", function () {
+        $('.faDiv').slideToggle();
+    });
+</script>
+
+</body>
+</html>
